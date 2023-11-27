@@ -1,0 +1,353 @@
+/*globali*/
+html {
+    width: 100vp;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+}
+
+/*HEADER - da aggiungere animazione scroll*/
+
+header {
+    background-color: #ffc017;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 0.1rem solid black;
+    position: sticky;
+    top: 0;
+    padding: 1rem 0;
+    z-index: 3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 15rem;
+}
+
+li {
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+li > a {
+    color: black;
+    text-decoration: none;
+    margin: 1rem 0;
+    width: auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 3rem;
+}
+
+li > a:hover {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+header > a img {
+    margin: 1rem 0 1rem 15rem;
+}
+
+/*MAIN*/
+
+/*#banner*/
+#banner {
+    background-color: #ffc017;
+    display: flex;
+    box-sizing: border-box;
+    height: 40rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid black;
+    margin-bottom: 2REM;
+}
+
+#banner > div {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 2rem 15rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#banner > div h1 {
+    font-family: 'Spectral', serif;
+    font-size: 8rem;
+    letter-spacing: -0.6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+#banner > div p {
+    font-size: 1.2rem;
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+#banner > div a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    width: 30%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 3rem;
+}
+
+#banner > div a:hover {
+    color: black;
+    background-color: white;
+}
+
+#banner > svg {
+    right: 0;
+    margin: 0;
+}
+
+/*ASIDE*/
+
+/*TRENDING ON MEDIUM*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.2rem solid #E6E6E6;
+}
+
+aside > #trendingTitle {
+    display: flex;
+    align-items: center;
+    margin: 0 15rem 1rem 15rem;
+}
+
+aside > #trendingTitle p {
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+/*SECTION*/
+
+#trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: first baseline;
+    margin: 0 15rem;
+}
+
+#trending > section {
+    display: flex;
+    align-items: flex-start;
+    width: 30%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+
+#trending > section:hover {
+    background-color: rgb(255, 251, 238);
+}
+
+#trending > section > p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #E6E6E6;
+    margin-right: 2rem;
+}
+
+#trending > section > div figure {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.round {
+    border-radius: 3rem;
+    height: 1.5rem;
+    margin-right: 0.7rem;
+}
+
+.notRound {
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    margin-right: 0.7rem;
+}
+
+.round, .notRound {
+    border: 0.1rem solid #E6E6E6;
+}
+
+#trending > section > div figcaption {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#trending > section > div figcaption span {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#trending > section > div h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.dateAndStar {
+    display: flex;
+    align-items: center;
+}
+
+.dateAndStar > p {
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+    color: #72727A;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 0.3rem;
+}
+
+/*CONTAINER*/
+
+#container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+/*ARTICLE*/
+
+article {
+    margin-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 10rem;
+    order: 1;
+    width: 50%;
+}
+
+.articles {
+    display: flex;
+    justify-content: flex-start;
+    width: 60rem;
+    height: 12rem;
+    margin-bottom: 2rem;
+}
+
+.articleImg {
+    height: 100%;
+    width: auto;
+    margin-left: 2rem;
+}
+
+.articles > div figure {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.articles h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.7rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #72727A;
+    margin-bottom: 1rem;
+    width: 40rem;
+}
+
+.publication {
+    display: flex;
+    align-items: center;
+    color: #72727A;
+    font-weight: 500;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.publication .timePub {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.publication .date, .publication .time, .publication .categories {
+    margin-right: 0.5rem;
+}
+
+.publication .time, .publication .categories {
+    margin-left: 0.5rem;
+}
+
+.publication .save {
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.publication .categories {
+    background-color: #E6E6E6;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+/*search*/
+
+#search {
+    order: 2;
+    align-content: flex-end;
+    margin: 0 2rem 3rem 2rem;
+    width: 20%;
+    text-align: left;
+    justify-content: left;
+}
+
+#search > h4 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+#search > section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#search > section a {
+    border: 0.1rem solid #E6E6E6;
+    text-decoration: none;
+    color: #72727A;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin: 0.2rem 0rem;
+    margin-right: 0.3rem;
+    width: auto;
+}
+
+#search > section a:hover {
+    background-color: #E6E6E6;
+}
+
+/*FOOTER*/
+
+#search > div {
+    border-top: 0.1rem solid #E6E6E6;
+    padding-top: 2rem;
+    display: flex;
+}
