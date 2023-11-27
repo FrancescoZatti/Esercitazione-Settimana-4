@@ -43,9 +43,19 @@ li > a {
 }
 
 li > a:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+    color: white;
+    font-weight: 500;
+}
+
+#button {
     background-color: black;
     color: white;
     font-weight: 600;
+}
+
+#button:hover {
+    background-color: rgb(114, 114, 121, 0.7);
 }
 
 header > a img {
@@ -242,6 +252,13 @@ article {
     width: 60rem;
     height: 12rem;
     margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.articles:hover {
+    background-color: rgb(230, 230, 230, 0.5);
 }
 
 .articleImg {
@@ -296,6 +313,12 @@ article {
     float: right;
     position: absolute;
     right: 0;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.publication .save:hover {
+    background-color: #ffc017;
 }
 
 .publication .categories {
@@ -304,6 +327,10 @@ article {
     border-radius: 3rem;
     font-weight: 400;
     box-sizing: border-box;
+}
+
+.publication .categories:hover {
+    background-color: rgb(114, 114, 121, 0.3);
 }
 
 /*search*/
@@ -350,4 +377,18 @@ article {
     border-top: 0.1rem solid #E6E6E6;
     padding-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
+    justify-items: left;
+    width: 120%;
+}
+
+#search > div > a {
+    text-decoration: none;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    color: #72727A;
+}
+
+#search > div > a:hover {
+    color: #ffc017;
 }
